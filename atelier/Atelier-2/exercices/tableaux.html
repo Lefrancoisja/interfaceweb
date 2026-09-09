@@ -7,28 +7,114 @@
 </head>
 <body>
     <h1>Exercices sur les tableaux HTML</h1>
-
-    <!-- Exercice 8: Tableau simple -->
     <section>
         <h2>Notes des étudiants</h2>
-        <!-- À COMPLÉTER: Créer un tableau simple -->
+        <table>
+            <thead>
+                <tr>
+                    <th><strong>Nom</strong></th>
+                    <th><strong>Math</strong></th>
+                    <th><strong>Français</strong></th>
+                    <th><strong>Moyenne</strong></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Dupont</td>
+                    <td>15</td>
+                    <td>12</td>
+                    <td>13.5</td>
+                </tr>
+                <tr>
+                    <td>Martin</td>
+                    <td>18</td>
+                    <td>16</td>
+                    <td>17</td>
+                </tr>
+                <tr>
+                    <td>Durand</td>
+                    <td>11</td>
+                    <td>14</td>
+                    <td>12.5</td>
+                </tr>
+            </tbody>
+        </table>
     </section>
-
-    <!-- Exercice 9: Tableau avec thead, tbody, tfoot -->
     <section>
         <h2>Rapport financier</h2>
-        <!-- À COMPLÉTER: Créer un tableau structuré -->
+        <table>
+            <thead>
+                <tr>
+                    <th><strong>Mois</strong></th>
+                    <th><strong>Revenus</strong></th>
+                    <th><strong>Dépenses</strong></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Janvier</td>
+                    <td>5000$</td>
+                    <td>3000$</td>
+                </tr>
+                <tr>
+                    <td>Février</td>
+                    <td>4500$</td>
+                    <td>2800$</td>
+                </tr>
+                <tr>
+                    <td>Mars</td>
+                    <td>5200$</td>
+                    <td>3100$</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>Mois</th>
+                    <th>Revenus</th>
+                    <th>Dépenses</th>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>14700$</td>
+                    <td>8900$</td>
+                </tr>
+            </tfoot>
+        </table>
     </section>
-
-    <!-- Exercice 10: Tableau avec colspan et rowspan -->
     <section>
         <h2>Planning des cours</h2>
-        <!-- À COMPLÉTER: Créer un tableau avec cellules fusionnées -->
+        <table>
+            <thead>
+                <tr>
+                    <th><strong>Heure</strong></th>
+                    <th colspan="3"><strong>Lundi à Mercredi</strong></th>
+                    <th colspan="2"><strong>Jeudi à Vendredi</strong></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>9h-10h</td>
+                    <td>HTML</td>
+                    <td>CSS</td>
+                    <td>JS</td>
+                    <td rowspan="2">Projet</td>
+                </tr>
+                <tr>
+                    <td>10h-11h</td>
+                    <td>PHP</td>
+                    <td>MySQL</td>
+                    <td>Tests</td>
+                </tr>
+            </tbody>
     </section>
 
     <!-- Navigation -->
     <nav>
-        <!-- À COMPLÉTER: Liens de navigation relatifs -->
+        <ul>
+            <li><a href="../index.html">Retour accueil</a></li>
+            <li><a href="tableaux.html">Vers tableaux</a></li>
+            <li><a href="/exercices/formulaires.html">Vers formulaires</a></li>
+        </ul>>
     </nav>
 </body>
 </html>
