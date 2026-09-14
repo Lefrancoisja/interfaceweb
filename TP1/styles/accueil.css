@@ -1,0 +1,17 @@
+h2 {
+    color: #cec8c8;
+    font-size: 14px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    gap: 80px;
+}
+
+li {
+    color: #ffffff;
+    font-size: 18px;
+}
