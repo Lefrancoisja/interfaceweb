@@ -8,12 +8,18 @@ header {
 }
 
 a {
-    color:#ffffff;
     text-decoration: none;
 }
 
 a:hover {
     text-decoration: underline;
+}
+
+.liensHeader {
+    color:#ffffff;
+}
+
+.liensHeader:hover {
     color: #d8d5d5
 }
 
@@ -49,8 +55,19 @@ footer {
     position: fixed;
     align-items: center;
     display: flex;
+    padding: 30px 150px;
 }
 
 thead {
     color: var(--primary-color);
+    font-size: 20px;
+}
+
+.tableau.Footer {
+    padding: 40px;
+    margin: 100px;
+}
+
+tbody {
+    color:#878686
 }
