@@ -2,10 +2,55 @@ header {
     background: linear-gradient(to left, var(--primary-color), darkblue);
     color: #ffffff;
     position: fixed;
-    top: 0;
-    width: 100%;
+    padding: 15px 150px;
+    align-items: center;
+    display: flex;
 }
 
-body {
+a {
+    color:#ffffff;
+    text-decoration: none;
+}
 
+a:hover {
+    text-decoration: underline;
+    color: #d8d5d5
+}
+
+nav {
+    margin-left: 425px;
+}
+
+h2 {
+    color: #cec8c8;
+    font-size: 14px;
+    margin: 0px;
+}
+
+h1 {
+    margin: 0px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    gap: 60px;
+}
+
+li {
+    color: #ffffff;
+    font-size: 18px;
+}
+
+footer {
+    background-color: var(--footer-bg);
+    position: fixed;
+    align-items: center;
+    display: flex;
+}
+
+thead {
+    color: var(--primary-color);
 }
