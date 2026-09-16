@@ -5,6 +5,7 @@ header {
     padding: 15px 150px;
     align-items: center;
     display: flex;
+    width: 100%;
 }
 
 a {
@@ -24,7 +25,7 @@ a:hover {
 }
 
 nav {
-    margin-left: 425px;
+    margin-left: 800px;
 }
 
 h2 {
@@ -52,22 +53,42 @@ li {
 
 footer {
     background-color: var(--footer-bg);
-    position: fixed;
     align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     display: flex;
     padding: 30px 150px;
+    margin: 0px auto;
+}
+
+.liensRapFooter {
+    color:#878686
+}
+
+tbody {
+    color:#878686
+}
+
+table {
+    border-collapse: collapse;
+    width: 1500px;
+}
+
+tr {
+    padding: 10px;
 }
 
 thead {
     color: var(--primary-color);
     font-size: 20px;
+    margin-bottom: 50px;
 }
 
-.tableau.Footer {
-    padding: 40px;
-    margin: 100px;
-}
-
-tbody {
-    color:#878686
+.copyright {
+    color: #878686;
+    font-size: 12px;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
 }
