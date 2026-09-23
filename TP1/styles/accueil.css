@@ -1,0 +1,27 @@
+h3 {
+    color: var(--primary-color);
+    font-size: 30px;
+    margin-top: 150px;
+    margin-bottom: 10px;
+}
+
+h4 {
+    color: var(--secondary-color);
+    font-size: 19px;
+    margin-top: 10px;
+}
+
+p {
+    color: #8d8d8d;
+    font-size: 16px;
+}
+
+body {
+    background-color: #e3eef0;
+}
+.bienvenue {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
