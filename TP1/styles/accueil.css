@@ -41,3 +41,42 @@ main {
     margin-right: 2%;
     padding: 0;
 }
+
+h6 {
+    color: var(--primary-color);
+    font-size: 23px;
+    margin: 0%;
+    margin-top: 5%;
+}
+
+#navBody {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+
+.imgNav {
+    top: auto;
+    left: auto;
+    height: 200px;
+    width: 350px;
+    object-fit: cover;
+    align-items: stretch;
+}
+
+.resumePages {
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    border-radius: 16px;
+    margin: 20px;
+    width: 350px;
+}
+
+.resumePages:hover {
+    transform: translateY(-5px);
+}
+
+.contenuNav {
+    padding: 32px;
+}

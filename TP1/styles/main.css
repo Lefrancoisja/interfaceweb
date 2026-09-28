@@ -32,7 +32,7 @@ a:hover {
     color: #d8d5d5
 }
 
-nav {
+#classHeader {
     display: flex;
     align-items: center;
 }
@@ -109,5 +109,17 @@ h5 {
 }
 
 img {
-    border-radius: 2%;
+    border-radius: 16px;
+}
+
+button {
+    background-color: var(--secondary-color);
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 25px;
+    padding: 12px 24px;
+}
+
+body {
+    height: 100vh;
 }
