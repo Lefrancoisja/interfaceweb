@@ -128,3 +128,10 @@ body {
 button:hover {
     background-color: rgb(75, 237, 137);
 }
+
+h3 {
+    color: var(--primary-color);
+    font-size: 40px;
+    margin-top: 0%;
+    margin-bottom: 10px;
+}
