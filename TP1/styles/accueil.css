@@ -4,11 +4,6 @@ h4 {
     margin-top: 10px;
 }
 
-p {
-    color: #8d8d8d;
-    font-size: 18px;
-}
-
 .bienvenue {
     justify-content: left;
     text-align: left;
@@ -29,12 +24,11 @@ section {
 }
 
 main {
-    background: linear-gradient(to top, #d1cfcf, rgb(235, 235, 236));
     display: flex;
     justify-content: left;
     text-align: left;
     margin: 0;
-    padding:0;
+    padding: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
