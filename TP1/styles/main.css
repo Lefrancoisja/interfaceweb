@@ -137,7 +137,7 @@ h3 {
 }
 
 main {
-    background: linear-gradient(to top, #d1cfcf, rgb(235, 235, 236));
+    background: linear-gradient(to top, #e7e6e6, rgb(235, 235, 236));
 }
 
 p {
@@ -167,7 +167,7 @@ h6 {
     top: auto;
     left: auto;
     height: 200px;
-    width: 350px;
+    width: 100%;
     object-fit: cover;
     align-items: stretch;
 }
