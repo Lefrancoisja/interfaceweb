@@ -1,0 +1,17 @@
+p {
+    margin: 0%;
+    padding: 18px 0px;
+}
+
+h3 {
+    color: var(--text-color);
+    font-size: 35px;
+}
+
+main {
+    padding-left: 11%;
+}
+
+.recette-info {
+    
+}
