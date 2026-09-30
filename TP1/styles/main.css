@@ -113,7 +113,7 @@ img {
 }
 
 button {
-    background-color: var(--secondary-color);
+    background: linear-gradient(to right, var(--secondary-color), rgb(3, 126, 30));
     color: #ffffff;
     font-weight: bold;
     border-radius: 25px;
@@ -126,7 +126,7 @@ body {
 }
 
 button:hover {
-    background-color: rgb(75, 237, 137);
+    background: rgb(75, 237, 137);
 }
 
 h3 {
@@ -143,4 +143,35 @@ main {
 p {
     color: #8d8d8d;
     font-size: 18px;
+}
+
+h6 {
+    color: var(--primary-color);
+    font-size: 23px;
+    margin: 0%;
+    margin-top: 5%;
+}
+
+.cartes {
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    border-radius: 16px;
+    margin: 20px;
+    width: 350px;
+}
+
+.cartes:hover {
+    transform: translateY(-5px);
+}
+
+.imgCartes {
+    top: auto;
+    left: auto;
+    height: 200px;
+    width: 350px;
+    object-fit: cover;
+    align-items: stretch;
+}
+
+.contenuCartes {
+    padding: 32px;
 }
