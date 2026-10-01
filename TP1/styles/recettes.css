@@ -23,8 +23,8 @@ h6 {
 }
 
 .infosText {
-    color: black;
     margin: 4px;
+    color: var(--text-color);
 }
 
 .facile {
@@ -59,4 +59,8 @@ section {
 
 .cartes {
     width: 400px;
+}
+
+p {
+    color: #8d8d8d;
 }

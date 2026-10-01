@@ -1,17 +1,41 @@
-p {
+nav {
     margin: 0%;
     padding: 18px 0px;
+    color: #8d8d8d;
 }
 
 h3 {
     color: var(--text-color);
     font-size: 35px;
+    margin-bottom: 30px;
 }
 
 main {
-    padding-left: 11%;
+    padding: 0% 11%;
 }
 
-.recette-info {
-    
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.recetteInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+}
+
+.variables {
+    margin: 5px;
+    margin-bottom: 15px;
+}
+
+.valeurs {
+    font-size: 25px;
+    margin: 0px;
 }
