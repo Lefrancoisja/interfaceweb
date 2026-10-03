@@ -4,11 +4,12 @@ header {
     position: sticky;
     top: 0;
     left: 0;
-    padding: 15px 0%;
+    padding: 15px 11%;
     align-items: center;
     display: flex;
     width: 100%;
-    justify-content: space-around;
+    justify-content: flex-start;
+    gap: 20%;
 }
 
 .divHead {
@@ -63,7 +64,6 @@ h1 {
 
 footer {
     background-color: var(--footer-bg);
-    align-items: flex-start;
     position: static;
     bottom: 0;
     width: 100%;
@@ -123,6 +123,7 @@ button {
 }
 
 body {
+    margin: 0%;
     height: 100vh;
 }
 
