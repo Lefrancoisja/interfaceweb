@@ -4,7 +4,7 @@ nav {
     color: #8d8d8d;
 }
 
-h3 {
+h2 {
     color: var(--text-color);
     font-size: 35px;
     margin-bottom: 30px;
@@ -67,7 +67,7 @@ aside {
     background-color: #5a6268;
 }
 
-.boiteConseils {
+article {
     border-radius: 16px;
     background-color: #f8f9fa;
     padding: 15px;
