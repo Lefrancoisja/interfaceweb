@@ -67,14 +67,6 @@ aside {
     background-color: #5a6268;
 }
 
-article {
-    border-radius: 16px;
-    background-color: #f8f9fa;
-    padding: 15px;
-    border-left: 3px solid var(--primary-color);
-    margin-top: 20px;
-}
-
 .texteBoite {
     margin: 0;
 }

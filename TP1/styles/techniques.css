@@ -17,10 +17,31 @@ section {
     justify-items: center;
 }
 
+.cartes:hover {
+    transform: none;
+}
+
+.technique-specifique {
+    border-top: 4px;
+    border-color: rgb(139, 20, 20);
+    margin-top: 50px;
+}
+
+.zone-grise {
+    background-color: rgb(246, 248, 250);
+    border-radius: 16px;
+    padding: 10px;
+}
+
 article {
     grid-column: 1/4;
     grid-row: 2/3;
-    padding: 10px 33%;
+    padding-left: 1%;
+    padding-right: 64%;
+    background-color: rgb(212, 245, 212);
+    color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    margin-bottom: 5%;
 }
 
 .conseils {

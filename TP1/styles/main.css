@@ -158,7 +158,8 @@ h6 {
     box-shadow: 0 5px 20px rgba(0,0,0,0.1);
     border-radius: 16px;
     margin: 20px;
-    min-width: 350px;
+    width: 350px;
+    padding: 32px;
 }
 
 .cartes:hover {
@@ -185,4 +186,13 @@ h6 {
 h3 {
     color: var(--primary-color);
     font-size: 25px;
+}
+
+
+article {
+    border-radius: 16px;
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-left: 3px solid var(--primary-color);
+    margin-top: 20px;
 }
