@@ -1,0 +1,28 @@
+main {
+    padding: 2%;
+    text-align: center;
+}
+
+.titre-desc {
+    max-width: 500px;
+}
+
+.texteGris {
+    font-size: 23px;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+
+article {
+    grid-column: 1/4;
+    grid-row: 2/3;
+    padding: 10px 33%;
+}
+
+.conseils {
+    text-align: left;
+}
