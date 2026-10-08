@@ -5,7 +5,7 @@
     padding: 0;
 }
 
-#cuisineImg {
+#cuisine-image {
     margin: 7% 0px;
 }
 
@@ -17,7 +17,7 @@ section {
     margin-bottom: 100px;
 }
 
-main {
+.section-top {
     display: flex;
     justify-content: left;
     text-align: left;
@@ -36,4 +36,20 @@ p {
     color: var(--secondary-color);
     font-size: 21px;
     margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    #cuisine-image {
+        max-height: 400px;
+        max-width: 600px;
+    }
+
+    section {
+        flex-wrap: wrap;
+    }
+
+    .cartes {
+        flex-wrap: wrap;
+        flex: 1 1 50%;
+    }
 }

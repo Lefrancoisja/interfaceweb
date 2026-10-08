@@ -139,7 +139,7 @@ h2 {
     margin-bottom: 10px;
 }
 
-main {
+.section-top {
     background: linear-gradient(to top, #e7e6e6, rgb(235, 235, 236));
 }
 
@@ -158,8 +158,9 @@ h6 {
     box-shadow: 0 5px 20px rgba(0,0,0,0.1);
     border-radius: 16px;
     margin: 20px;
-    width: 350px;
-    padding: 32px;
+    min-width: 300px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .cartes:hover {
