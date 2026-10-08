@@ -5,6 +5,11 @@
     padding: 0;
 }
 
+.section-top {
+    display: flex;
+    flex-direction: row;
+}
+
 #cuisine-image {
     margin: 7% 0px;
 }
@@ -38,18 +43,40 @@ p {
     margin-top: 10px;
 }
 
-@media (max-width: 768px) {
-    #cuisine-image {
+@media (max-width: 1024px) {
+        #cuisine-image {
         max-height: 400px;
         max-width: 600px;
     }
 
     section {
         flex-wrap: wrap;
+        justify-content: flex-start;
     }
 
-    .cartes {
-        flex-wrap: wrap;
-        flex: 1 1 50%;
+    section > .cartes {
+        flex: 0 0 50%;
+        max-width: 45%;
+    }
+}
+
+@media (max-width: 815px) {
+    .section-top {
+        flex-direction: column;
+    }
+
+    .section-top > * {
+        text-align: center;
+    }
+
+    section > .cartes {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    #cuisine-image {
+        max-height: 500px;
+        max-width: 100%;
+        width: 100%;
     }
 }

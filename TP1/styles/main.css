@@ -4,18 +4,13 @@ header {
     position: sticky;
     top: 0;
     left: 0;
-    padding: 15px 11%;
-    align-items: center;
+    padding: 2% 11%;
+    align-items: left;
     display: flex;
     width: 100%;
     justify-content: flex-start;
-    gap: 20%;
+    gap: 15%;
     z-index: 10;
-}
-
-.divHead {
-    display: flex;
-    flex-direction: column;
 }
 
 a {
@@ -55,12 +50,12 @@ h1 {
     display: flex;
     flex-direction: row;
     padding: 0;
-    gap: 60px;
+    gap: 20px;
 }
 
 .liNav {
     color: #ffffff;
-    font-size: 18px;
+    font-size: 15px;
 }
 
 footer {
@@ -196,4 +191,23 @@ article {
     padding: 15px;
     border-left: 3px solid var(--primary-color);
     margin-top: 20px;
+}
+
+@media (max-width: 1024px) {
+    header {
+        padding: 2%;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .divHead {
+        align-self: center;
+    }
 }
