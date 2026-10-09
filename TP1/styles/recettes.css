@@ -11,20 +11,36 @@ h6 {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    flex-wrap: wrap;
     margin-bottom: 5%;
     gap: 10px;
 }
 
 section {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
     margin: 2.5% 5%;
 }
 
 .cartes {
-    width: 400px;
+    min-width: 0px;
+    max-width: 400px;
+    width: 100%
 }
 
 p {
     color: #8d8d8d;
+}
+
+@media (max-width: 1024px) {
+    section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    section {
+        grid-template-columns: 1fr;       
+    }
 }

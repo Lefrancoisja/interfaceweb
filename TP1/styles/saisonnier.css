@@ -47,7 +47,7 @@ td, th {
     width: 33.3%;
 }
 
-.texteGris {
+.texte-gris {
     font-size: 20px;
     text-align: center;
 }
@@ -59,9 +59,9 @@ h3 {
 .cartes-conseil {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 50px;
+    gap: 80px;
     margin-bottom: 100px;
-    width: 50%;
+    width: 85%;
 }
 
 .cartes-conseil > .cartes {
@@ -69,4 +69,10 @@ h3 {
     min-width: 300px;
     width: 100%;
     margin: 0;
+}
+
+@media (max-width: 768px) {
+    .cartes-conseil {
+        grid-template-columns: 1fr;  
+    }
 }

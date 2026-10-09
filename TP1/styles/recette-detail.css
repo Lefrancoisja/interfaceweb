@@ -12,6 +12,7 @@ h2 {
 
 .section-top {
     padding-left: 11%;
+    text-align: left;
 }
 
 section {
@@ -21,9 +22,10 @@ section {
     align-items: top;
     padding: 0% 11%;
     padding-top: 30px;
+    gap: 20px;
 }
 
-.recetteInfo {
+.recette-info {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -52,22 +54,22 @@ aside {
     margin: 0;
 }
 
-.ingredientsTop {
+.titre-ingredients {
     margin-top: 0;
 }
 
-.buttonVersRecettes {
+.button-vers-recettes {
     width: 200px;
     margin: 20% 0%;
     background: #6c757d;
     align-items: left;
 }
 
-.buttonVersRecettes:hover {
+.button-vers-recettes:hover {
     background-color: #5a6268;
 }
 
-.texteBoite {
+.texte-boite {
     margin: 0;
 }
 
@@ -81,4 +83,19 @@ ol {
 
 li {
     line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    section {
+        grid-template-columns: 1fr;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .recette-info {
+        padding-left: 17%;
+    }
 }
