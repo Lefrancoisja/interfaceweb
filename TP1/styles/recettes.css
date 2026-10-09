@@ -15,42 +15,6 @@ h6 {
     gap: 10px;
 }
 
-.infosGen {
-    border-radius: 16px;
-    text-align: center;
-    width: 100px;
-    background-color: #d8d4d441;
-}
-
-.infosText {
-    margin: 4px;
-    color: var(--text-color);
-}
-
-.facile {
-    border-radius: 16px;
-    text-align: center;
-    width: 100px;
-    background-color: #aeff9c5b;
-}
-
-.moyen {
-    border-radius: 16px;
-    text-align: center;
-    width: 100px;
-    background-color: #fff76263;
-}
-
-.facileText {
-    color: rgb(36, 128, 0);
-    margin: 4px;
-}
-
-.moyenText {
-    color: rgb(179, 164, 33);
-    margin: 4px;
-}
-
 section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
