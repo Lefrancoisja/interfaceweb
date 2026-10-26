@@ -8,11 +8,12 @@
 /**
  * Convertit une température de Celsius en Fahrenheit
  * @param {number} celsius - La température en degrés Celsius
- * @returns {number} La température en degrés Fahrenheit
+ * @returns {number} fahrenheit - La température en degrés Fahrenheit
  */
 function convertirCelsiusVersfahrenheit(celsius) {
     // TODO: Retourner le résultat de la conversion en utilisant l'expression c*9/5+32
-    return undefined;
+    let farhaneit = celsius * 9 / 5 + 32;
+    return farhaneit;
 }
 
 /**
@@ -20,8 +21,12 @@ function convertirCelsiusVersfahrenheit(celsius) {
  */
 function initialiser() {
     // TODO: Récupérer les éléments DOM (#c, #go, #out)
+    const goBouton = document.querySelector("#go");
+    const outText = document.querySelector('out');
+    const celsius = document.querySelector('c');
 
     // TODO: Au clic sur #go, convertir la valeur de #c et afficher dans #out
+    bouton.addEventListener("click", convertirCelsiusVersfahrenheit, { once:true });
     
     // TODO: Gérer le cas où l'input est vide (afficher "Veuillez entrer une valeur")
 }
