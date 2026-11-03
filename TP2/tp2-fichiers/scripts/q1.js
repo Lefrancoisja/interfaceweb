@@ -22,13 +22,18 @@ function convertirCelsiusVersfahrenheit(celsius) {
 function initialiser() {
     // TODO: Récupérer les éléments DOM (#c, #go, #out)
     const goBouton = document.querySelector("#go");
-    const outText = document.querySelector('out');
-    const celsius = document.querySelector('c');
+    const outText = document.querySelector('#out');
+    const celsius = document.querySelector('#c');
 
-    // TODO: Au clic sur #go, convertir la valeur de #c et afficher dans #out
-    bouton.addEventListener("click", convertirCelsiusVersfahrenheit, { once:true });
-    
-    // TODO: Gérer le cas où l'input est vide (afficher "Veuillez entrer une valeur")
+    goBouton.addEventListener("click", (event) => {
+        const entree = Number(celsius.value);
+        const resultat = convertirCelsiusVersfahrenheit(entree);
+        outText.textContent = entree + "°C = " + resultat + "°F";
+
+        if (celsius.value.trim() === "") {
+            outText.textContent = "Veuillez entrer une valeur";
+        }
+    });
 }
 
 // Initialisation au chargement de la page
