@@ -13,11 +13,20 @@ const mul = undefined;
  * Initialise les événements de la page
  */
 function initialiser() {
-    // TODO: Récupérer les éléments DOM (#a, #m, #res)
 
-    // TODO: Au clic sur #a, calculer add(3, 4) et afficher dans #res
+    const addButton = document.querySelector("#a");
+    const multButton = document.querySelector('#m');
+    const outText = document.querySelector('#res');
 
-    // TODO: Au clic sur #m, calculer mul(3, 4) et afficher dans #res
+    addButton.addEventListener("click", (event2) => {
+        const resultatAdd = add(3, 4);
+        outText.textContent = resultatAdd;
+    });
+
+    multButton.addEventListener("click", (event2) => {
+        const resultatMult = mul(3, 4);
+        outText.textContent = resultatMult;
+    });
 }
 
 // Initialisation au chargement de la page

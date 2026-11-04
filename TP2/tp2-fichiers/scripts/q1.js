@@ -25,7 +25,7 @@ function initialiser() {
     const outText = document.querySelector('#out');
     const celsius = document.querySelector('#c');
 
-    goBouton.addEventListener("click", (event) => {
+    goBouton.addEventListener("click", (event1) => {
         const entree = Number(celsius.value);
         const resultat = convertirCelsiusVersfahrenheit(entree);
         outText.textContent = entree + "°C = " + resultat + "°F";
