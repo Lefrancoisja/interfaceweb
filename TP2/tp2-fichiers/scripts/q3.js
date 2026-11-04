@@ -3,8 +3,14 @@
  * Manipuler des tableaux d'objets et afficher des listes filtrées
  */
 
-// TODO: Déclarez le tableau d'objets jeux
-const jeux = undefined;
+const jeux = [
+  { nom: "Azul", duree: 45 },
+  { nom: "Catan", duree: 90 },
+  { nom: "Agricola", duree: 120 },
+  { nom: "Far Away", duree: 25 },
+  { nom: "Flip 7", duree: 20 },
+  { nom: "Ticket to ride", duree: 45 }
+];
 
 /**
  * Méthode générique pour afficher une liste de jeux dans un élément ul
@@ -12,21 +18,28 @@ const jeux = undefined;
  * @param {HTMLElement} elementUl - L'élément <ul> dans lequel ajouter les items
  */
 function afficherJeux(listeJeux, elementUl) {
-    // TODO: Implémenter la logique pour afficher chaque jeu dans l'élément ul
-    // Format: <li>nom (duree min)</li>
+
+    listeJeux.forEach(jeu => {
+        const item = document.createElement("li");
+        item.textContent = `${jeu.nom} (${jeu.duree} min)`;
+        elementUl.appendChild(item);
+    });
 }
 
 /**
  * Initialise les listes de jeux
  */
 function initialiser() {
-    // TODO: Récupérer les éléments DOM (#liste-court, #liste-long)
 
-    // TODO: Filtrer les jeux courts (moins de 60 minutes)
+    const listeCourt = document.querySelector("#liste-court");
+    const listeLong = document.querySelector("#liste-long");
 
-    // TODO: Filtrer les jeux longs (60 minutes ou plus)
+    const jeuxCourt = jeux.filter(jeu => jeu.duree < 60);
 
-    // TODO: Appeler afficherJeux pour chaque liste
+    const jeuxLong = jeux.filter(jeu => jeu.duree >= 60);
+
+    afficherJeux(jeuxCourt, listeCourt);
+    afficherJeux(jeuxLong, listeLong);
 }
 
 // Initialisation au chargement de la page
