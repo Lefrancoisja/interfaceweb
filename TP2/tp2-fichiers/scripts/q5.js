@@ -9,20 +9,32 @@
  * Initialise les événements de la page
  */
 function initialiser() {
-    // TODO: Récupérer les éléments DOM (#n, #start, #stop, #double)
+    
+    const numero = document.querySelector("#n");
+    const start = document.querySelector("#start");
+    const stop = document.querySelector("#stop");
+    const double = document.querySelector("#double");
 
-    // TODO: Au clic sur Start
-    // - Vérifier qu'un interval n'est pas déjà en cours
-    // - Lancer setInterval qui incrémente la valeur chaque seconde
-    // - Afficher la nouvelle valeur dans #n
+    let chiffre = 0;
+    let intervale = null;
+    start.addEventListener("click", (event) => {
+        if (intervale === null) {
+            intervale = setInterval(() => {
+                chiffre++;
+                numero.textContent = chiffre;
+            }, 1000);
+        }
+    });
 
-    // TODO: Au clic sur Stop
-    // - Utiliser clearInterval pour arrêter l'interval
-    // - Réinitialiser l'id de l'interval
+    stop.addEventListener("click", (event) => {
+        clearInterval(intervale);
+        intervale = null;
+    });
 
-    // TODO: Bonus - Au clic sur ×2
-    // - Multiplier la valeur actuelle par 2
-    // - Afficher la nouvelle valeur
+    double.addEventListener("click", (event) => {
+        chiffre = chiffre * 2;
+        numero.textContent = chiffre;
+    });
 }
 
 // Initialisation au chargement de la page
